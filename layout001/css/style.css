@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: url("../img/bg.jpg") no-repeat center bottom fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 62.5%;
+  color: white;
+
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-width {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  padding: 50px 20px;
+}
+
+.content {
+  padding: 20px;
+}
+
+h1 {
+  width: 80%;
+  font-size: 3rem;
+  font-weight: 200;
+  line-height: 4rem;
+}
+
+p {
+  font-size: 1rem;
+  width: 50%;
+  line-height: 1.5rem;
+  margin-bottom: 40px;
+}
+
+input[type*="email"] {
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+  max-width: 100%;
+  background: #e58b70;
+  padding: 15px;
+  color: white;
+  font-weight: 400;
+  margin: 0 10px 10px 0;
+}
+
+input[type*="email"]::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+}
+
+input[type*="submit"] {
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  color: #e58b70;
+  font-weight: 400;
+  background: white;
+  transition: 0.5s;
+}
+
+input[type*="submit"]:hover {
+  color: white;
+  background: black;
+}
+
+/*section {flex: 1;}*/
+footer {
+  margin-top: auto;
+  padding: 20px;
+}
+
+.foot-menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.foot-menu li {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.foot-menu:last-child {
+  padding: 15px;
+  color: #e58b70;
+}
+
+.foot-menu a {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+  padding: 15px;
+}
+
+.foot-menu a:hover {
+  color: black;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+@media (max-width: 820px) {
+  body {
+    text-align: center;
+  }
+
+  h1, p {
+    width: 100%;
+  }
+
+  .foot-menu {
+    display: block;
+  }
+
+  .foot-menu li:last-of-type {
+    padding: 15px;
+  }
+
+  .foot-menu li {
+    margin: 0;
+  }
+
+  .foot-menu a {
+    display: block;
+    margin: 0;
+  }
+}
