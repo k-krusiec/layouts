@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Roboto Slab', serif;
+  font-size: 10px;
+}
+
+h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.page-header {
+  padding: 0 20px;
+  position: absolute;
+  width: 100%;
+}
+
+.page-logo {
+  fill: #FFFFFF;
+  width: 100px;
+}
+
+.hamburger-btn {
+  background: 0;
+  border: 0;
+  fill: none;
+  position: absolute;
+  right: 20px;
+  stroke: #FFFFFF;
+  top: 24px;
+}
+
+.hamburger-btn .hamburger-icon {
+  width: 25px;
+}
+
+.hamburger-btn .close-icon {
+  display: none;
+}
+
+.navigation-menu {
+  display: none;
+  list-style: none;
+  padding: 25px 0;
+}
+
+.navigation-menu li {
+  padding: 5px;
+  width: 90%;
+}
+
+.navigation-menu li a {
+  color: #FFFFFF;
+  display: block;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.page-header.nav-opened {
+  background: #8bd607;
+  background: -moz-linear-gradient(left, #8bd607 0%, #53ba18 100%);
+  background: -webkit-linear-gradient(left, #8bd607 0%,#53ba18 100%);
+  background: linear-gradient(to right, #8bd607 0%,#53ba18 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8bd607', endColorstr='#53ba18',GradientType=1 );
+}
+
+.page-header.nav-opened .page-logo {
+  display: none;
+}
+
+.page-header.nav-opened .hamburger-icon {
+  display: none;
+}
+
+.page-header.nav-opened .close-icon {
+  display: block;
+  stroke: #FFFFFF;
+  margin: 8px 0;
+}
+
+.hero-header {
+  background: url('../images/hero.jpg') no-repeat center center;
+  background-size: cover;
+  color: #FFFFFF;
+  padding: 90px 20px 100px;
+  text-align: center;
+}
+
+.hero-header h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.hero-header p {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 220px;
+  width: 100%;
+}
+
+.contact div {
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 0 0 20px 2px rgba(0,0,0,0.3);
+  color: #707070;
+  display: flex;
+  flex-flow: column;
+  font-size: 1.2rem;
+  margin: 0 5px;
+  padding: 5px;
+  text-align: center;
+  width: 60px;
+}
+
+.contact img {
+  margin-bottom: 4px;
+  width: 30px;
+}
+
+.contact p {
+  margin-bottom: 5px;
+}
+
+.section-about {
+  padding: 10px 20px;
+}
+
+.section-about button {
+  background-color: #083643;
+  border: none;
+  border-radius: 5px;
+  box-shadow: -3px 3px 3px -2px rgba(0,0,0,0.3);
+  color: #FFFFFF;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+
+.section-about img {
+  margin: 20px 0 0;
+  width: 100%;
+}
+
+.section-services {
+  padding: 10px 20px;
+}
+
+.section-services h4 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.section-services p {
+  font-size: 1.1rem;
+}
+
+.services-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.services-icons div {
+  border-bottom: 2px solid #B7B7B8;
+  margin-bottom: 10px;
+  padding: 10px 0 20px;
+  text-align: center;
+  width: 33%;
+}
+
+.section-portfolio {
+  padding: 0 20px;
+  position: relative;
+}
+
+.section-portfolio > img {
+  width: 100%;
+}
+
+.main-info {
+  background: #8bd607;
+  background: -moz-linear-gradient(left, #8bd607 0%, #53ba18 100%);
+  background: -webkit-linear-gradient(left, #8bd607 0%,#53ba18 100%);
+  background: linear-gradient(to right, #8bd607 0%,#53ba18 100%);
+  color: #FFFFFF;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8bd607', endColorstr='#53ba18',GradientType=1 );
+  left: 40px;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  width: 40%;
+}
+
+.main-info a {
+  color: #1A4B3B;
+}
+
+.gallery-item {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+}
+
+.gallery-item img {
+  margin-right: 10px;
+}
+
+.gallery-item time {
+  color: #7F7F7F;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.gallery-item p {
+  font-weight: 700;
+}
+
+.section-download {
+  padding: 0 20px;
+}
+
+.section-download .background {
+  display: none;
+}
+
+.store {
+  display: flex;
+}
+
+footer {
+  background-color: #083643;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  padding: 10px 20px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1.1rem;
+  padding: 0;
+}
+
+footer img {
+  display: none;
+}
