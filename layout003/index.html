@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang=pl>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <title></title>
+  </head>
+  <body>
+    <div class="main-width">
+      <header>
+        <div>
+          <img src="img/topLogo.png" alt="Top logo" />
+        </div>
+      </header>
+      <section>
+        <div class="main-container">
+          <div class="left-col">
+
+            <div class="panel-group">
+              <span class="title">Register Form</span>
+              <div class="panel">
+                <div class="panel-content">
+                  <form class="form">
+                    <input class="textfield" type="text" name="reg-username" placeholder="Username" />
+                    <input class="textfield" type="password" name="reg-password" placeholder="Password" />
+                    <input class="textfield" type="password" name="reg-confirmPassword" placeholder="Confirm Password" />
+                    <input class="textfield" type="email" name="reg-email" placeholder="Email" />
+                    <input class="textfield" type="text" name="reg-location" placeholder="Your location" />
+                    <input type="checkbox" name="reg-rules" />
+                    <label for="reg-rules">I have read and accept the terms of use.</label>
+                    <input class="std-btn" type="button" name="reg-submit" value="Sing up" />
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel-group">
+              <span class="title">Send Email</span>
+              <div class="panel">
+                <div class="panel-content">
+                  <form class="form">
+                    <input type="text" name="snd-name" placeholder="Your Name" />
+                    <input type="email" name="snd-email" placeholder="Your Email" />
+                    <textarea name="snd-msg" rows="8" cols="40" placeholder="Type your message..."></textarea>
+                    <input type="checkbox" name="snd-copy" />
+                    <label for="snd-copy">Send a copy to my Email</label>
+                    <input type="button" name="rec-submit" value="Send Email" />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="right-col">
+
+            <div class="panel-group">
+              <span class="title">Sign In Form</span>
+              <div class="panel">
+                <div class="panel-content">
+                  <form class="form">
+                    <input type="text" name="sign-username" placeholder="Username" />
+                    <input type="password" name="sign-password" placeholder="Password" />
+                    <input type="checkbox" name="sign-remember" />
+                    <label for="sign-remember">Remember me</label>
+                    <input type="button" name="sign-submit" value="Sign in" />
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel-group">
+              <span class="title">Recover Form</span>
+              <div class="panel">
+                <div class="panel-content">
+                  <form class="form">
+                    <input type="email" name="rec-email" placeholder="Enter your Email" />
+                    <input type="tel" name="rec-phone" placeholder="Enter your Phone number" />
+                    <input type="button" name="rec-submit" value="Send" />
+                    <input type="button" name="rec-done" value="Done" />
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel-group">
+              <span class="title">Subscribe Form</span>
+              <div class="panel">
+                <div class="panel-content">
+                  <form class="form">
+                    <input type="email" name="sub-email" value="Enter your Email" />
+                    <input type="button" name="sub-subscribe" value="Subscribe" />
+                    <input type="button" name="sub-not" value="No, thanks" />
+                  </form>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </body>
+</html>
