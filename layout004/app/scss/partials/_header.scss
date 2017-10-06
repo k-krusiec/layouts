@@ -1,0 +1,23 @@
+header {
+  background: url('../images/hero.jpg') no-repeat center center;
+  background-size: cover;
+  color: #FFFFFF;
+  padding: 20px;
+  position: relative;
+  .page-logo {
+    display: inline-block;
+    img {
+      width: 100px;
+    }
+  }
+  .hamburger-btn {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    .hamburger-icon {
+      width: 32px;
+    }
+  }
+}
