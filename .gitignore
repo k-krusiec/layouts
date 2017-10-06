@@ -1,4 +1,4 @@
-dist
-node_modules
-_assets
-app/css
+*/dist/
+*/node_modules/
+*/_assets/
+*/app/css
