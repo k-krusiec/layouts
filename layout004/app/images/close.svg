@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+    <line class="cls-1" x1="20.85" y1="75.15" x2="75.15" y2="20.85"/>
+    <line class="cls-1" x1="20.85" y1="20.85" x2="75.15" y2="75.15"/>
+</svg>
