@@ -1,0 +1,18 @@
+@mixin shadow-settings ($horizontalLength, $verticalLength, $blurRadius, $spreadRadius, $red, $green, $blue, $opacity) {
+  -webkit-box-shadow: $horizontalLength $verticalLength $blurRadius $spreadRadius rgba($red, $green, $blue, $opacity);
+  -moz-box-shadow: $horizontalLength $verticalLength $blurRadius $spreadRadius rgba($red, $green, $blue, $opacity);
+  box-shadow: $horizontalLength $verticalLength $blurRadius $spreadRadius rgba($red, $green, $blue, $opacity);
+}
+
+@mixin icon-settings ($width, $strokeColor, $strokeWidth, $fillColor) {
+  width: $width;
+  stroke: $strokeColor;
+  stroke-width: $strokeWidth;
+  fill: $fillColor;
+}
+
+@mixin font-settings ($color, $size, $weight) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+}

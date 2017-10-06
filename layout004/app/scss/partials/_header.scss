@@ -1,23 +1,87 @@
 header {
   background: url('../images/hero.jpg') no-repeat center center;
   background-size: cover;
-  color: #FFFFFF;
-  padding: 20px;
-  position: relative;
-  .page-logo {
-    display: inline-block;
-    img {
-      width: 100px;
+
+  .main-navigation {
+    @include shadow-settings (0, 0, 10px, 0, 0, 0, 0, 0.5);
+    background: $white;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+    ul {
+      margin: 50px 20px;
+
+      li {
+        list-style: none;
+        padding: 10px;
+        border-bottom: 1px solid $light-gray;
+
+        a {
+          color: $gray;
+          font-size: 1.6rem;
+          text-transform: uppercase;
+          text-decoration: none;
+        }
+      }
     }
   }
+
   .hamburger-btn {
     background: none;
     border: none;
     position: absolute;
-    top: 15px;
-    right: 20px;
-    .hamburger-icon {
-      width: 32px;
+    top: 20px;
+    right: 25px;
+    height: 32px;
+
+    .ham-open-icon {
+      @include icon-settings (32px, $white, 5px, none);
     }
+
+    .ham-close-icon {
+      @include icon-settings (32px, $gray, 5px, none);
+    }
+  }
+
+  .main-width {
+    color: $white;
+    position: relative;
+  }
+
+  .page-logo {
+    display: inline-block;
+    margin-top: 23px;
+
+    img {
+      width: 150px;
+    }
+  }
+
+  .phone-number {
+    display: none;
+  }
+
+  h1 {
+    @include font-settings (inherit, 2rem, 400);
+    line-height: 2.5rem;
+    text-align: center;
+    padding: 35px 15px 30px;
+    span {
+      color: $green;
+    }
+  }
+
+  .header-info {
+    @include font-settings (inherit, 1.2rem, 300);
+    line-height: 1.8rem;
+    text-align: center;
+    padding: 0 15px 40px;
+  }
+
+  .play-btn {
+    display: none;
   }
 }

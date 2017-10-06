@@ -12,62 +12,72 @@
   <body>
 
     <header>
+      <nav class="main-navigation" aria-label="main-navigation">
+        <ul class="hidden">
+          <li>
+            <a href="#">About us</a>
+          </li>
+          <li>
+            <a href="#">Why us?</a>
+          </li>
+          <li>
+            <a href="#">Packages</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+        <button class="hamburger-btn" type="button">
+          <svg class="ham-open-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+            <line x1="9.6" y1="48.48" x2="86.4" y2="48.48"/>
+            <line x1="9.6" y1="67.68" x2="86.4" y2="67.68"/>
+            <line x1="9.6" y1="29.28" x2="86.4" y2="29.28"/>
+          </svg>
+          <svg class="ham-close-icon hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+            <line x1="20.85" y1="75.15" x2="75.15" y2="20.85"/>
+            <line x1="20.85" y1="20.85" x2="75.15" y2="75.15"/>
+          </svg>
+        </button>
+      </nav>
       <div class="main-width">
         <a class="page-logo" href="#"><img src="./images/page_logo.png" alt=""></a>
-        <nav>
-          <ul>
-            <li>
-              <a href="#">About US</a>
-            </li>
-            <li>
-              <a href="#">Why us?</a>
-            </li>
-            <li>
-              <a href="#">Packages</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-          </ul>
-          <button type="button" class="hamburger-btn">
-            <img class="hamburger-icon open" src="./images/hamburger.svg">
-            <img class="hamburger-icon close hidden" src="./images/close.svg">
-          </button>
-        </nav>
-        <div>Call us : + 1 256 365 669</div>
+        <div class="phone-number">Call us : + 1 256 365 669</div>
         <h1>We will <span>help you</span> when founding <span>your</span> company</h1>
-        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, e in orci enim.</p>
-        <p>Watch to learn more</p>
+        <p class="header-info">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, e in orci enim.</p>
+        <button class="play-btn" type="button">
+          <img src="./images/play_btn.svg">
+          Watch to learn more
+        </button>
       </div>
     </header>
-    <section>
+    <section class="packages-section">
       <div class="main-width">
         <h2>Amazing packages for everyone</h2>
-        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.  Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+        <p class="packages-info">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.  Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
         <div class="packages">
           <div class="package-item">
             <img src="./images/pack_starter.svg" alt="">
             <h4>Package 1</h4>
-            <p>Starter</p>
-            <p>This is Photoshop's version  of Lorem Ipsum.</p>
-            <p>99$</p>
-            <button type="button" name="button">Try It Now</button>
+            <p class="package-name">Starter</p>
+            <p class="package-info">This is Photoshop's version  of Lorem Ipsum.</p>
+            <p class="package-price">99$</p>
+            <button class="package-button" type="button">Try It Now</button>
           </div>
           <div class="package-item">
             <img src="./images/pack_hero.svg" alt="">
             <h4>Package 2</h4>
-            <p>Hero</p>
-            <p>This is Photoshop's version  of Lorem Ipsum.</p>
-            <p>199$</p>
-            <button type="button" name="button">Try It Now</button>
+            <p class="package-name">Hero</p>
+            <p class="package-info">This is Photoshop's version  of Lorem Ipsum.</p>
+            <p class="package-price">199$</p>
+            <button class="package-button" type="button">Try It Now</button>
           </div>
           <div class="package-item">
             <img src="./images/pack_deluxe.svg" alt="">
             <h4>Package 3</h4>
-            <p>Deluxe</p>
-            <p>This is Photoshop's version  of Lorem Ipsum.</p>
-            <p>299$</p>
-            <button type="button" name="button">Try It Now</button>
+            <p class="package-name">Deluxe</p>
+            <p class="package-info">This is Photoshop's version  of Lorem Ipsum.</p>
+            <p class="package-price">299$</p>
+            <button class="package-button" type="button">Try It Now</button>
           </div>
         </div>
       </div>
@@ -197,7 +207,7 @@
     </section>
     <footer>
       <div class="main-width">
-        <nav>
+        <nav class="footer-navigation" aria-label="footer-navigation">
           <ul>
             <li>
               <a href="#">About</a>
