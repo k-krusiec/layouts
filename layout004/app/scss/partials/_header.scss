@@ -13,7 +13,6 @@ header {
 
     ul {
       margin: 50px 20px;
-
       li {
         list-style: none;
         padding: 10px;
@@ -27,6 +26,10 @@ header {
         }
       }
     }
+  }
+
+  .fade-in {
+    animation: fadeIn .3s steps(90) forwards;
   }
 
   .hamburger-btn {
