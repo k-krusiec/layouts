@@ -1,0 +1,27 @@
+.clients-section {
+  padding: 30px 0;
+  text-align: center;
+
+  h2 {
+    @include font-settings ($dark-gray, 1.6rem, 700);
+    margin-bottom: 10px;
+  }
+
+  .clients-info {
+    @include font-settings ($dark-gray, 1.2rem, 300);
+    line-height: 1.6rem;
+    margin-bottom: 10px;
+  }
+
+  .clients {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  img {
+    padding: 10px;
+    width: 135px;
+    align-self: center;
+  }
+}

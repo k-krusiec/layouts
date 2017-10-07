@@ -1,0 +1,65 @@
+.overview-section {
+  background: $dark-gray;
+  padding: 30px 0 50px;
+  text-align: center;
+  color: $white;
+
+  h2 {
+    @include font-settings ($white, 1.6rem, 700);
+    margin-bottom: 10px;
+  }
+
+  .overview-info {
+    @include font-settings ($white, 1.2rem, 300);
+    line-height: 1.6rem;
+    margin-bottom: 10px;
+  }
+
+  .overview-table {
+    overflow-x: scroll;
+    margin-top: 50px;
+
+    table {
+      border-collapse: collapse;
+    }
+
+    tr th:not(:first-child) {
+      @include font-settings ($white, 1.4rem, 600);
+      text-transform: uppercase;
+      min-width: 120px;
+    }
+
+    tr th:first-child {
+      background-color: $dark-green;
+      @include font-settings ($white, 1.2rem, 700);
+      padding: 5px 10px;
+      line-height: 1.4rem;
+    }
+
+    td {
+      border: 1px solid $ultra-dark-green;
+
+      img {
+        margin: 10px;
+        width: 20px;
+      }
+    }
+
+    td:first-of-type {
+      @include font-settings ($white, 1.6rem, 300);
+    }
+
+    tr:last-of-type td {
+      border: none;
+
+      button {
+        @include font-settings ($white, 1.4rem, 300);
+        background-color: $green;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 15px;
+        margin: 15px 0 20px;
+      }
+    }
+  }
+}

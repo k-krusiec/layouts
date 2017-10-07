@@ -1,0 +1,65 @@
+.about-section {
+  padding: 30px 0;
+  text-align: center;
+
+  h2 {
+    @include font-settings ($dark-gray, 1.6rem, 700);
+    margin-bottom: 10px;
+  }
+
+  .about-info {
+    @include font-settings ($dark-gray, 1.2rem, 300);
+    line-height: 1.6rem;
+    margin-bottom: 10px;
+  }
+
+  .profits {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .profit-item {
+    padding: 10px;
+    margin: 10px 0;
+
+    img {
+      width: 70px;
+    }
+
+    h5 {
+      @include font-settings ($light-green, 1.6rem, 700);
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
+
+    p {
+      @include font-settings ($light-gray, 1.2rem, 300);
+      padding: 0 15px;
+    }
+  }
+
+  .call-to-action {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .phone-number {
+    @include font-settings ($white, 1.2rem, 700);
+    background-color: $green;
+    width: 200px;
+    padding: 17px 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+  }
+
+  button {
+    @include font-settings ($green, 1.2rem, 700);
+    text-transform: uppercase;
+    background-color: $white;
+    width: 200px;
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: 1px solid $green;
+  }
+}

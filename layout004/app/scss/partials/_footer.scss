@@ -1,0 +1,24 @@
+footer {
+  background-color: $dark-gray;
+  padding: 20px 0 30px;
+  text-align: center;
+  ul {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin-bottom: 40px;
+    li {
+      list-style: none;
+      width: 30%;
+      padding: 10px 5px;
+      text-align: center;
+      a {
+        @include font-settings ($almost-white, 1.2rem, 400);
+        text-decoration: none;
+      }
+    }
+  }
+  img {
+    width: 150px;
+  }
+}
