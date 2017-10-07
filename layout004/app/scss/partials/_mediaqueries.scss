@@ -1,0 +1,83 @@
+@media (orientation: landscape) {
+  header {
+    h1 {
+      span:last-of-type {
+        &::before {
+          content: '\A';
+          white-space: pre;
+        }
+      }
+    }
+  }
+  .packages-section {
+    .package-item {
+      padding-bottom: 40px;
+      img {
+        width: 50%;
+      }
+      h4 {
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+      }
+      .package-info {
+        font-size: 1.4rem;
+      }
+    }
+  }
+  .about-section {
+    .phone-number {
+      margin: 10px 5px 5px;
+    }
+
+    button {
+      margin: 10px 5px 5px;
+      padding: 15px;
+    }
+  }
+  .overview-section {
+    overflow-x: visible;
+    .overview-table {
+      tr th:not(:first-child) {
+        min-width: 100px;
+      }
+      tr th:first-child {
+        width: 180px;
+        span {
+          &::after {
+            content: '\A';
+            white-space: pre;
+          }
+        }
+      }
+      tr:last-of-type td {
+        button {
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  .overview-section {
+    overflow-x: visible;
+    .overview-table {
+      tr th:not(:first-child) {
+        min-width: 120px;
+      }
+      tr th:first-child {
+        span {
+          &::after {
+            content: '\A';
+            white-space: pre;
+          }
+        }
+      }
+      tr:last-of-type td {
+        button {
+          padding: 10px 15px;
+        }
+      }
+    }
+  }
+}
