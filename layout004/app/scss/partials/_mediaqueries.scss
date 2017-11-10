@@ -81,3 +81,131 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  header {
+    h1 {
+      @include font-settings (inherit, 2.5rem, 400);
+      line-height: 3rem;
+      span:last-of-type {
+        &::before {
+          content: '\A';
+          white-space: pre;
+        }
+      }
+    }
+    .header-info {
+      @include font-settings (inherit, 1.4rem, 300);
+      line-height: 2rem;
+      text-align: center;
+      padding: 0 15px 40px;
+    }
+  }
+
+  .packages-section {
+    padding: 30px 0 0;
+    h2 {
+      @include font-settings ($white, 2rem, 700);
+      margin-bottom: 10px;
+    }
+    .packages-info {
+      @include font-settings ($white, 1.3rem, 300);
+    }
+    .packages {
+      flex-flow: row;
+    }
+    .package-item {
+      padding: 30px;
+      margin: 30px 0 0;
+      img {
+        width: 50%;
+      }
+      h4 {
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+      }
+      .package-info {
+        font-size: 1.4rem;
+      }
+    }
+    .package-item:nth-of-type(2) {
+      padding-top: 40px;
+      margin: 20px 20px 0;
+    }
+    .package-item:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  .about-section {
+    h2 {
+      @include font-settings ($dark-gray, 2rem, 700);
+    }
+
+    .about-info {
+      @include font-settings ($dark-gray, 1.3rem, 300);
+    }
+    .profit-group {
+      display: flex;
+      flex-flow: row;
+    }
+    .profit-item {
+
+      p {
+        @include font-settings ($light-gray, 1.4rem, 300);
+      }
+    }
+    .phone-number {
+      margin: 20px 5px 5px;
+    }
+
+    button {
+      margin: 20px 5px 5px;
+      padding: 15px;
+    }
+  }
+  .overview-section {
+    background: $dark-gray;
+    padding: 30px 0 50px;
+    text-align: center;
+    color: $white;
+
+    h2 {
+      @include font-settings ($white, 2rem, 700);
+    }
+
+    .overview-info {
+      @include font-settings ($white, 1.3rem, 300);
+    }
+
+    .overview-table {
+      tr th:not(:first-child) {
+        min-width: 140px;
+      }
+      tr th:first-child {
+        width: 200px;
+        padding: 10px 0;
+        span {
+          &::after {
+            content: '';
+            white-space: normal;
+          }
+        }
+      }
+      tr:last-of-type td {
+        button {
+          @include font-settings ($white, 1.6rem, 300);
+          padding: 15px 25px;
+        }
+      }
+    }
+  }
+  .clients-section {
+    h2 {
+      @include font-settings ($dark-gray, 2rem, 700);
+    }
+
+    .clients-info {
+      @include font-settings ($dark-gray, 1.3rem, 300);
+    }
+  }
+}
