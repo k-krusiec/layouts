@@ -83,6 +83,10 @@
 }
 
 @media (min-width: 768px) {
+  .main-width {
+    width: 90%;
+  }
+
   header {
     h1 {
       @include font-settings (inherit, 2.5rem, 400);
@@ -206,6 +210,99 @@
 
     .clients-info {
       @include font-settings ($dark-gray, 1.3rem, 300);
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-width {
+    width: 960px;
+    max-width: 100%;
+  }
+  header {
+    position: relative;
+    padding-bottom: 70px;
+    .main-navigation {
+      @include shadow-settings (0, 0, 0, 0, 0, 0, 0, 0);
+      background: transparent;
+      max-width: 75%;
+
+      ul {
+        display: flex;
+        justify-content: flex-end;
+        margin: 30px 0;
+
+        li {
+          border-bottom: none;
+          padding: 10px 20px;
+
+          a {
+            color: $white;
+            text-transform: none;
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+    .hamburger-btn {
+      display: none;
+    }
+    .page-logo {
+      margin-top: 25px;
+
+      img {
+        width: 200px;
+      }
+    }
+    .phone-number {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 22px;
+    }
+    h1 {
+      margin-top: 60px;
+      span:last-of-type {
+        &::before {
+          content: '';
+          white-space: normal;
+        }
+      }
+    }
+    .header-info {
+      @include font-settings (inherit, 1.4rem, 300);
+      line-height: 2rem;
+      text-align: center;
+      width: 75%;
+      margin: 0 auto;
+    }
+    .play-btn {
+      display: block;
+    }
+  }
+
+  .packages-section {
+    padding: 50px 0 0;
+  }
+
+  .about-section,
+  .overview-section,
+  .clients-section,
+  footer {
+    padding: 50px 0;
+  }
+
+  .overview-section {
+    .overview-table {
+      tr th {
+        width: 200px;
+      }
+      tr:last-of-type td {
+
+        button {
+          padding: 15px 40px;
+        }
+      }
     }
   }
 }
