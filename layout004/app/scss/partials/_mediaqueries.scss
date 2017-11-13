@@ -294,6 +294,7 @@
 
   .overview-section {
     .overview-table {
+      overflow-x: visible;
       tr th {
         width: 200px;
       }
@@ -304,5 +305,32 @@
         }
       }
     }
+  }
+}
+
+@media (min-width: 1028px) {
+  .main-width {
+    width: 1200px;
+    max-width: 100%;
+  }
+
+  .packages {
+    justify-content: space-around;
+  }
+
+  .packages-info,
+  .about-info,
+  .overview-info,
+  .clients-info {
+    margin: 0 auto;
+    width: 75%;
+  }
+
+  .package-item:nth-of-type(2) {
+    margin: 20px 0 0;
+  }
+
+  footer ul li a {
+    font-size: 1.5rem;
   }
 }
