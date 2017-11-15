@@ -334,3 +334,270 @@
     font-size: 1.5rem;
   }
 }
+
+@media (min-width: 1600px) {
+  .main-width {
+    width: 1600px;
+    max-width: 100%;
+  }
+
+  header {
+    padding-bottom: 100px;
+    .main-navigation {
+      max-width: 70%;
+
+      ul {
+        margin: 62px 0;
+
+        li {
+
+          a {
+            font-size: 2.1rem;
+          }
+        }
+      }
+    }
+    .page-logo {
+      margin-top: 56px;
+
+      img {
+        width: 240px;
+      }
+    }
+    .phone-number {
+      font-size: 2.2rem;
+
+      padding: 25px 40px;
+      margin-top: 25px;
+    }
+    h1 {
+      font-size: 4.5rem;
+      margin-top: 100px;
+    }
+    .header-info {
+      font-size: 2.3rem;
+      line-height: 4rem;
+      width: 50%;
+    }
+    .play-btn {
+      font-size: 1.9rem;
+      img {
+        margin: 0 auto 20px;
+        width: 40%;
+      }
+    }
+  }
+
+  .packages-info,
+  .about-info,
+  .overview-info,
+  .clients-info {
+    margin: 0 auto;
+    width: 85%;
+  }
+
+  .packages-section {
+    padding: 70px 0 0;
+
+    h2 {
+      font-size: 4.8rem;
+      margin-bottom: 25px;
+    }
+
+    .packages-info {
+      font-size: 2.5rem;
+      line-height: 3rem;
+      margin-bottom: 50px;
+    }
+
+    .package-item {
+      padding: 60px 60px 50px;
+      margin: 50px 0 0;
+
+      img {
+        width: 160px;
+        margin-bottom: 85px;
+      }
+
+      h4 {
+        font-size: 2.7rem;
+        margin-bottom: 30px;
+      }
+
+      .package-name {
+        font-size: 5.3rem;
+        margin-bottom: 30px;
+      }
+
+      .package-info {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        margin-bottom: 30px;
+      }
+
+      .package-price {
+        font-size: 6.6rem;
+        margin-bottom: 30px;
+      }
+
+      .package-button {
+        font-size: 3rem;
+        padding: 30px 90px;
+      }
+    }
+
+    .package-item:nth-of-type(2) {
+      margin: 0 50px;
+      padding: 110px 60px 50px;
+    }
+  }
+
+  .about-section {
+    padding: 70px 0;
+
+    h2 {
+      font-size: 4.8rem;
+      margin-bottom: 25px;
+    }
+
+    .about-info {
+      font-size: 2.5rem;
+      line-height: 3rem;
+      margin-bottom: 50px;
+    }
+
+    .profit-item {
+      padding: 10px;
+      margin: 10px 0;
+
+      img {
+        width: 100px;
+      }
+
+      h5 {
+        font-size: 2.9rem;
+        margin: 25px 0 30px;
+      }
+
+      p {
+        font-size: 1.9rem;
+        line-height: 3rem;
+        padding: 0 50px;
+        margin-bottom: 60px;
+      }
+    }
+
+    .call-to-action {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+
+    .phone-number {
+      font-size: 2.2rem;
+      padding: 35px 10px;
+      width: 324px;
+      margin: 30px 30px 35px;
+    }
+
+    button {
+      font-size: 2.2rem;
+      padding: 35px 10px;
+      width: 324px;
+      margin: 30px;
+    }
+  }
+
+  .overview-section {
+    padding: 70px 0;
+
+    h2 {
+      font-size: 4.8rem;
+      margin-bottom: 25px;
+    }
+
+    .overview-info {
+      font-size: 2.5rem;
+      line-height: 3rem;
+      margin-bottom: 50px;
+    }
+
+    .overview-table {
+
+      tr th:not(:first-child) {
+        font-size: 3.8rem;
+        min-width: 400px;
+        padding: 30px;
+      }
+
+      tr th:first-child {
+        font-size: 2.4rem;
+        padding: 10px;
+        line-height: 3rem;
+        width: auto;
+      }
+
+      td {
+
+        img {
+          margin: 10px;
+          width: 40px;
+        }
+      }
+
+      td:first-of-type {
+        font-size: 3.8rem;
+        padding: 50px 0;
+      }
+
+      tr:last-of-type td {
+
+        button {
+          font-size: 3rem;
+          padding: 30px 95px;
+          margin: 15px 0 20px;
+        }
+      }
+    }
+  }
+
+  .clients-section {
+    padding: 70px 0;
+
+    h2 {
+      font-size: 4.8rem;
+      margin-bottom: 25px;
+    }
+
+    .clients-info {
+      font-size: 2.5rem;
+      line-height: 3rem;
+      margin-bottom: 50px;
+    }
+
+    .clients {
+      flex-flow: row nowrap;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  footer {
+    padding: 70px 0;
+    ul {
+      flex-flow: row nowrap;
+      margin-bottom: 100px;
+      li {
+        width: 100%;
+        a {
+          font-size: 1.7rem;
+        }
+      }
+    }
+    img {
+      width: 250px;
+    }
+  }
+}
