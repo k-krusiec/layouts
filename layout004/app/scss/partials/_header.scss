@@ -2,54 +2,6 @@ header {
   background: url('../images/hero.jpg') no-repeat center center;
   background-size: cover;
 
-  .main-navigation {
-    @include shadow-settings (0, 0, 10px, 0, 0, 0, 0, 0.5);
-    background: $white;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-
-    ul {
-      margin: 50px 20px;
-      display: none;
-      li {
-        list-style: none;
-        padding: 10px;
-        border-bottom: 1px solid $ultra-light-gray;
-
-        a {
-          color: $gray;
-          font-size: 1.6rem;
-          text-transform: uppercase;
-          text-decoration: none;
-        }
-      }
-    }
-  }
-
-  .fade-in {
-    animation: fadeIn .3s steps(90) forwards;
-  }
-
-  .hamburger-btn {
-    background: none;
-    border: none;
-    position: absolute;
-    top: 20px;
-    right: 25px;
-    height: 32px;
-
-    .ham-open-icon {
-      @include icon-settings (32px, $white, 5px, none);
-    }
-
-    .ham-close-icon {
-      @include icon-settings (32px, $gray, 5px, none);
-    }
-  }
-
   .main-width {
     color: $white;
     position: relative;
